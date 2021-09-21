@@ -13,9 +13,9 @@ func ValidateTheme(configuration *schema.Configuration, validator *schema.Struct
 		configuration.Theme = "light"
 	}
 
-	validThemes := regexp.MustCompile("light|dark|grey|auto")
+	validThemes := regexp.MustCompile("light|dark|grey|auto|socib")
 
 	if !validThemes.MatchString(configuration.Theme) {
-		validator.Push(fmt.Errorf("Theme: %s is not valid, valid themes are: \"light\", \"dark\", \"grey\" or \"auto\"", configuration.Theme))
+		validator.Push(fmt.Errorf("Theme: %s is not valid, valid themes are: \"light\", \"dark\", \"grey\", \"socib\" or \"auto\"", configuration.Theme))
 	}
 }

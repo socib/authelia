@@ -16,3 +16,4 @@ declare module "@material-ui/core/styles/createTheme" {
 export { default as Light } from "@themes/Light";
 export { default as Dark } from "@themes/Dark";
 export { default as Grey } from "@themes/Grey";
+export { default as Socib } from "@themes/Socib";

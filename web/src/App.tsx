@@ -37,6 +37,8 @@ function Theme() {
             return themes.Dark;
         case "grey":
             return themes.Grey;
+        case "socib":
+            return themes.Socib;
         case "auto":
             return window.matchMedia("(prefers-color-scheme: dark)").matches ? themes.Dark : themes.Light;
         default:
