@@ -3,8 +3,6 @@ import React, { ReactNode } from "react";
 import { Grid, makeStyles, Container, Typography, Link } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
 
-import { ReactComponent as UserSvg } from "@assets/images/user.svg";
-
 export interface Props {
     id?: string;
     children?: ReactNode;
@@ -19,7 +17,7 @@ const LoginLayout = function (props: Props) {
             <Container maxWidth="xs" className={style.rootContainer}>
                 <Grid container>
                     <Grid item xs={12}>
-                        <UserSvg className={style.icon}></UserSvg>
+                        <img src="/images/logoSocib.png" alt="SOCIB logo" />
                     </Grid>
                     {props.title ? (
                         <Grid item xs={12}>
