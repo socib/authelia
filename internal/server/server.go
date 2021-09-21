@@ -32,7 +32,7 @@ func registerRoutes(configuration schema.Configuration, providers middlewares.Pr
 
 	embeddedPath, _ := fs.Sub(assets, "public_html")
 	embeddedFS := fasthttpadaptor.NewFastHTTPHandler(http.FileServer(http.FS(embeddedPath)))
-	rootFiles := []string{"favicon.ico", "manifest.json", "robots.txt"}
+	rootFiles := []string{"favicon.ico", "manifest.json", "robots.txt", "images/logoSocib.png"}
 
 	serveIndexHandler := ServeTemplatedFile(embeddedAssets, indexFile, rememberMe, resetPassword, configuration.Session.Name, configuration.Theme)
 	serveSwaggerHandler := ServeTemplatedFile(swaggerAssets, indexFile, rememberMe, resetPassword, configuration.Session.Name, configuration.Theme)
