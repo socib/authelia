@@ -14,6 +14,47 @@ const Socib = createTheme({
             paper: "#fff",
         },
     },
+    overrides: {
+        MuiCssBaseline: {
+            "@global": {
+                body: {
+                    backgroundColor: "#2dc6d6",
+                    background: "radial-gradient(circle, #2dc6d6 20%, #00335c 100%)",
+                },
+                ".jss11": {
+                    backgroundColor: "#ffffff",
+                },
+                "#logo-socib": {
+                    position: "absolute",
+                    bottom: "10px",
+                    right: "10px",
+                },
+            },
+        },
+        MuiInputBase: {
+            root: {
+                backgroundColor: "#ffffff",
+            },
+        },
+        MuiOutlinedInput: {
+            root: {
+                "&:hover": {
+                    backgroundColor: "#ffffff",
+                },
+            },
+        },
+        MuiContainer: {
+            root: {
+                backgroundColor: "#ffffffa1",
+                borderRadius: "5px",
+            },
+        },
+        MuiTypography: {
+            h5: {
+                margin: "20px 0 0 0",
+            },
+        },
+    },
 });
 
 export default Socib;

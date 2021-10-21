@@ -16,9 +16,6 @@ const LoginLayout = function (props: Props) {
         <Grid id={props.id} className={style.root} container spacing={0} alignItems="center" justify="center">
             <Container maxWidth="xs" className={style.rootContainer}>
                 <Grid container>
-                    <Grid item xs={12}>
-                        <img src="/images/logoSocib.png" alt="SOCIB logo" />
-                    </Grid>
                     {props.title ? (
                         <Grid item xs={12}>
                             <Typography variant="h5" className={style.title}>
